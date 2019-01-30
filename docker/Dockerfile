@@ -24,6 +24,7 @@ ENV PATH=/usr/share/.rbenv/bin:/usr/share/.rbenv/bin:/usr/local/sbin:/usr/local/
 RUN rbenv install 2.4.0
 RUN rbenv global 2.4.0
 RUN sudo apt-get install libmysqlclient-dev -y
+RUN sudo apt-get install nodejs -y
 RUN export RBENV_ROOT="${HOME}/.rbenv"
 RUN export PATH="${RBENV_ROOT}/bin:${PATH}"
 RUN sudo echo 'eval "$(rbenv init -)"' >> ~/.bashrc

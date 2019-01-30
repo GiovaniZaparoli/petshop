@@ -4,8 +4,8 @@ class CreateServices < ActiveRecord::Migration[5.2]
       t.text :description
       t.float :price
       t.binary :picture
-      
-      t.timestamp
+
+      t.timestamps
     end
   end
 end
