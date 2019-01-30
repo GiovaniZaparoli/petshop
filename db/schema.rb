@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_30_183450) do
+ActiveRecord::Schema.define(version: 2019_01_30_210105) do
 
   create_table "schedules", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
     t.string "owner_name"
@@ -27,9 +27,12 @@ ActiveRecord::Schema.define(version: 2019_01_30_183450) do
   create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
     t.text "description"
     t.float "price"
-    t.binary "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "imagem_file_name"
+    t.string "imagem_content_type"
+    t.integer "imagem_file_size"
+    t.datetime "imagem_updated_at"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|

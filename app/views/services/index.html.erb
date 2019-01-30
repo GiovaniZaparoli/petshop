@@ -1,0 +1,26 @@
+ <div class="container mt-4">
+  <% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <table class="table table-bordered text-center">
+    <thead>
+    <tr>
+      <th class="text-center">Descrição</th>
+      <th class="text-center">Imagem</th>
+      <th class="text-center">Preço</th>
+      <th class="text-center">Remover</th>
+      <th class="text-center">Editar</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'service', collection: @service %>
+    </tbody>
+  </table>
+
+  <div>
+    <%= link_to 'Novo Serviço', new_service_path, class: 'btn btn-info' %>
+  </div>
+ </div>
