@@ -9,19 +9,17 @@
   <table class="table table-bordered text-center">
     <thead>
     <tr>
-      <th class="text-center">Descrição</th>
-      <th class="text-center">Imagem</th>
-      <th class="text-center">Preço</th>
+      <th class="text-center">Email</th>
       <th class="text-center">Remover</th>
       <th class="text-center">Editar</th>
     </tr>
     </thead>
     <tbody>
-    <%= render partial: 'service', collection: @service %>
+    <%= render partial: 'users', collection: @user %>
     </tbody>
   </table>
 
   <div>
-    <%= link_to 'Novo Serviço', new_service_path, class: 'btn btn-info' %>
+    <%= link_to 'Novo Usuário', new_user_path, class: 'btn btn-info' %>
   </div>
- </div>
+</div>

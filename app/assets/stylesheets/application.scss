@@ -1,2 +1,13 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+
+.header {
+  background-color: blue;
+  height: 10vh;
+}
+
+/* ...
+*= require_tree .
+*= require_self
+*/
