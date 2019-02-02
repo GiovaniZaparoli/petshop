@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
 
+  before_action :authenticate_user!
+
   before_action :set_user, only: [:edit, :update, :destroy]
 
   def index
-    result = User.all
-    @users = result.to_a.uniq{ |u| u.email }
+    @users = User.all
     render :index
   end
 
@@ -17,9 +18,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       flash[:notice] = "Usuário criado com sucesso"
-      index
+      redirect_to users_path
     else
-      render :new
+      flash[:notice] = "Falha ao criado com sucesso"
+      redirect_to users_path
     end
   end
 
@@ -30,15 +32,21 @@ class UsersController < ApplicationController
   def update
     if @user.update  user_params
       flash[:notice] = 'Usuário atualizado com sucesso'
-      index
+      redirect_to users_path
     else
-      render :edit
+      flash[:notice] = 'Falha ao atualizar dados do usuário'
+      redirect_to users_path
     end
   end
 
   def destroy
-    @user.destroy
-    index
+    if @user.destroy
+      flash[:notice] = 'Usuário excluído'
+      redirect_to users_path
+    else
+      flash[:notice] = 'Falha ao excluir usuário'
+      redirect_to users_path
+    end
   end
 
   private

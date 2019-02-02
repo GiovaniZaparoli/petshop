@@ -3,6 +3,15 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-12">
+      <% if flash[:notice] %>
+        <div class="alert alert-success" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <h1 class="text-center">Conheça alguns de nossos serviços</h1>
       <p class="text-center">Alguém que te faz sorrir após um dia exaustivo? Alguém que está com você mesmo quando ninguém
       mais está? Pois é seu pet é sensacional! E não merece nada menos que isso, então venha conheço o pet's dreams,
@@ -15,9 +24,10 @@
         <div class="card mt-3">
           <img class="card-img-top img-fluid card-image" src="<%= service.imagem.url(:medium) %>" alt="Foto do Serviço">
           <div class="card-body">
-            <h2 class="card-title text-center"><%= service.description %></h2>
+            <h4 class="card-title text-center"><%= service.name %></h4>
+            <p class="text-center"> <%= service.description %></p>
             <h5>Valor R$ <%= service.price %></h5>
-            <%= link_to 'Agendar Serviço', new_schedule_path(service: service), class: 'btn btn-danger' %>
+            <%= link_to 'Agendar Serviço', new_schedule_path(service: service), class: 'btn btn-danger btn-font' %>
           </div>
         </div>
       </div>

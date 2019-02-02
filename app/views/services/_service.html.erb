@@ -1,12 +1,11 @@
 <tr>
-  <td><%= service.description %></td>
+  <td><%= service.name %></td>
   <td><img src="<%= service.imagem.url(:thumb) %>" alt=""></td>
   <td>R$ <%= service.price %></td>
   <td>
-    <%= button_to "Remover Serviço", service, method: :delete, class: 'btn btn-danger',
-                  data: {confirm: "Tem certeza que deseja remover #{service.description} ?"}%>
+    <%= button_to "Remover Serviço", service, method: :delete, class: 'btn btn-danger' %>
   </td>
   <td>
-    <%= link_to "Alterar", edit_service_path(service), class: 'btn btn-primary' %>
+    <%= link_to "Alterar", edit_service_path(service), class: 'btn btn-primary btn-font' %>
   </td>
 </tr>

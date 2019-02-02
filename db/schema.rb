@@ -25,13 +25,14 @@ ActiveRecord::Schema.define(version: 2019_02_01_193158) do
   end
 
   create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
+    t.text "name"
     t.text "description"
     t.float "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "imagem_file_name"
     t.string "imagem_content_type"
-    t.integer "imagem_file_size"
+    t.bigint "imagem_file_size"
     t.datetime "imagem_updated_at"
   end
 

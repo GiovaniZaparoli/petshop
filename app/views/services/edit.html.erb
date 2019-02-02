@@ -1,4 +1,6 @@
-<div class="row">
+<%= render partial: 'backoffice/header' %>
+
+<div class="row mt-5">
   <div class="col-md-12 d-flex justify-content-center">
     <h1 class="display text-center">Edição de um serviço</h1>
   </div>
@@ -6,3 +8,7 @@
     <%= render partial: 'form', locals: { acao: 'Alterar serviço' } %>
   </div>
 </div>
+
+<%= render partial: 'backoffice/background' %>
+
+<%= render partial: 'backoffice/footer' %>

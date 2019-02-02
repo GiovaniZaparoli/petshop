@@ -12,7 +12,7 @@ class ServicesController < ApplicationController
     @service = Service.new service_params
     if @service.save
       flash[:notice] = "Serviço salvo com sucesso"
-      index
+      redirect_to services_path
     else
       render :new
     end
@@ -25,15 +25,20 @@ class ServicesController < ApplicationController
   def update
     if @service.update  service_params
       flash[:notice] = 'Serviço atualizado com sucesso'
-      index
+      redirect_to services_path
     else
-      renderiza :edit
+      render :edit
     end
   end
 
   def destroy
-    @service.destroy
-    index
+    if @service.destroy
+      flash[:notice] = 'Serviço excluído com sucesso'
+      redirect_to services_path
+    else
+      flash[:notice] = 'Falha ao excluído com sucesso'
+      redirect_to services_path
+    end
   end
 
   def new
@@ -44,7 +49,7 @@ class ServicesController < ApplicationController
   private
 
   def service_params
-    params.require(:service).permit(:description, :price, :imagem)
+    params.require(:service).permit(:name, :description, :price, :imagem)
   end
 
   def set_service

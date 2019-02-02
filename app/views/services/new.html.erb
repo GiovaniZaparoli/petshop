@@ -1,10 +1,12 @@
+<%= render partial: 'backoffice/header' %>
+
 <% @service.errors.full_messages.each do |message| %>
   <div class="alert alert-danger" role="alert">
     <%= message %>
   </div>
 <% end %>
 
-<div class="row">
+<div class="row mt-5">
   <div class="col-md-12">
     <h1 class="display text-center">Cadastrar novo Serviço</h1>
   </div>
@@ -12,3 +14,7 @@
     <%= render partial: 'form', locals: { acao: 'Criar novo serviço' } %>
   </div>
 </div>
+
+<%= render partial: 'backoffice/background' %>
+
+<%= render partial: 'backoffice/footer' %>

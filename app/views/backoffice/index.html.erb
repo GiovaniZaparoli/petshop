@@ -1,11 +1,19 @@
 <%= render partial: 'backoffice/header' %>
-
-<div class="row">
-  <div class="col-md-12">
-    <h1 class="text-center">Bem vindo ao modulo de administração Pet's Dreams</h1>
-    <p class="text-center">Aqui você poderá cadastrar, alterar e excluir serviços e usuários, além de relatórios sobres
-    os serviços agendados a partir do dia atual, com detalhamento de horário e os dados do dono do Pet caso precise entrar em contato</p>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-12 d-flex justify-content-center">
+      <% if flash[:notice] %>
+        <div class="alert alert-success" role="alert">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-md-12">
+      <h1 class="text-center">Bem vindo ao modulo de administração Pet's Dreams</h1>
+      <p class="text-center">Aqui você poderá cadastrar, alterar e excluir serviços e usuários, além de relatórios sobres
+      os serviços agendados a partir do dia atual, com detalhamento de horário e os dados do dono do Pet caso precise entrar em contato</p>
+    </div>
   </div>
 </div>
-
 <%= render partial: 'backoffice/background' %>
+<%= render partial: 'backoffice/footer' %>

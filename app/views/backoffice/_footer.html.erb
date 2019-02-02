@@ -1,7 +1,7 @@
 <section class="footer">
   <div class="row">
-    <div class="offset-md-5 col-md-2 offset-md-5">
-      <button class="btn btn-dark"><%= link_to 'Área do Administrador', backoffice_index_path, class: 'btn-font' %></button>
+    <div class="col-md-12 d-flex justify-content-center">
+      <button class="btn btn-dark btn-font"><%= link_to 'Deslogar', destroy_user_session_path, method: :delete, class: 'btn-font' %></button>
     </div>
   </div>
   <div class="row">

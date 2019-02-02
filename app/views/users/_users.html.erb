@@ -1,10 +1,9 @@
  <tr>
     <td><%= users.email %></td>
    <td>
-     <%= button_to "Excluir Usuário", users, method: :delete, class: 'btn btn-danger',
-                   data: {confirm: "Tem certeza que deseja remover #{users.email} ?"}%>
+     <%= button_to "Excluir Usuário", users, method: :delete, class: 'btn btn-danger'%>
    </td>
    <td>
-    <%= link_to "Editar usuário", edit_user_path(users), class: 'btn btn-primary' %>
+    <%= link_to "Editar usuário", edit_user_path(users), class: 'btn btn-primary btn-font' %>
     </td>
   </tr>

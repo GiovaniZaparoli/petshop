@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <table class="table table-bordered text-center">
+  <table class="table table-striped table-dark text-center">
     <thead>
     <tr>
       <th class="text-center">Dono do Pet</th>
@@ -21,10 +21,11 @@
       <th class="text-center">Telefone</th>
       <th class="text-center">Dia</th>
       <th class="text-center">Horario</th>
+      <th class="text-center">Serviço</th>
     </tr>
     </thead>
     <tbody>
-    <%= render partial: 'schedule', collection: @schedules %>
+    <%= render partial: 'schedule', collection: @schedule %>
     </tbody>
   </table>
 </div>
