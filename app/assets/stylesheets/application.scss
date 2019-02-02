@@ -3,9 +3,46 @@
 
 
 .header {
-  background-color: blue;
-  height: 10vh;
+  background-image: url('https://images.wallpaperscraft.com/image/golden_retriever_dog_ball_playful_lying_grass_109373_1920x1080.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  overflow: hidden;
 }
+
+.back-image {
+  background-image: url('https://images.wallpaperscraft.com/image/cat_lying_furry_89835_1920x1080.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 30vh;
+}
+
+.seal {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+
 
 /* ...
 *= require_tree .

@@ -1,5 +1,8 @@
 class WelcomeController < ApplicationController
-  def index
 
+  def index
+    @services = Service.all
+    render :index
   end
+
 end

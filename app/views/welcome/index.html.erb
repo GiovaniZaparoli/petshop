@@ -1,18 +1,51 @@
-<head>
-  <%= stylesheet_link_tag 'application' %>
-</head>
-
 <div class="header">
   <div class="row">
     <div class="col-md-12">
-      <img class="img-fluid" src="https://i.pinimg.com/originals/51/ec/5a/51ec5ab51ea05f99a4449c77f9cc1282.jpg" style="height: 10vh">
+      <h1 class="text-center">Bem Vindo ao Pet's Dreams</h1>
+      <p class="text-center">Pet's Dreams é o maior e melhor conceitudo petshop da américa latina, com os melhores produtos e técnicas, venha conhecer!</p>
     </div>
   </div>
 </div>
-<div class="container">
+<div class="container mt-4">
   <div class="row">
     <div class="col-md-12">
-
+      <h1 class="text-center">Conheça alguns de nossos serviços</h1>
+      <p class="text-center">Alguém que te faz sorrir após um dia exaustivo? Alguém que está com você mesmo quando ninguém
+      mais está? Pois é seu pet é sensacional! E não merece nada menos que isso, então venha conheço o pet's dreams,
+      o maior petshop da américa latina, com a melhor qualidade de atendimento, equipe bem treinada e equipamentos de ultima geração, seu pet terá um dia dos sonhos.</p>
     </div>
   </div>
+  <div class="row">
+    <% @services.try(:each) do |service| %>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div class="card mt-3">
+          <img class="card-img-top img-fluid card-image" src="<%= service.imagem.url(:medium) %>" alt="Foto do Serviço">
+          <div class="card-body">
+            <h2 class="card-title text-center"><%= service.description %></h2>
+            <h5>Valor R$ <%= service.price %></h5>
+            <a href="#" class="btn btn-danger">Agendar Serviço</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+<section class="back-image mt-5">
+
+</section>
+
+<section class="footer">
+
+  <div class="row">
+    <div class="offset-md-5 col-md-2 offset-md-5">
+      <button class="btn btn-dark">Área do Administrador</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mt-1">
+      <p class="text-center">Desenvolvido por: Zaparoli Técnologias de E-commerce LTDA</p>
+    </div>
+  </div>
+
+
+</section>
