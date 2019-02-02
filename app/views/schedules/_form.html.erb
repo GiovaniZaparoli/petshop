@@ -15,7 +15,7 @@
 
         <div class="field form-group">
           <label>Telefone</label>
-          <%= f.text_field :phone, class: 'form-control' %>
+          <%= f.text_field(:phone, data: { mask: '(99) 999-9999' }, class: 'form-control' )%>
         </div>
 
         <div class="field form-group">

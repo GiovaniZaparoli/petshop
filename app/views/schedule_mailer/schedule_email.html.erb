@@ -5,8 +5,8 @@
 </head>
 <body>
 <h1 class="text-center">O servico de <%= @schedule.service.name %> foi agendado com sucesso</h1>
-<h3>Olá <%= @schedule.owner_name %> é com imenso prazer que viemos avisar que seu serviço de <%= @schedule.service.name %>
-foi agendado com sucesso, obrigado pela preferência, confirme a data e hora do serviço e caso precise entre em contato conosco.</h3>
+<h3>Olá <%= @schedule.owner_name %> é com imenso prazer que confirmamos o agendamento do serviço de <%= @schedule.service.name %>
+, obrigado pela preferência. Confirme o horário e a data do atendimento, para qualquer dúvida entre em contato conosco estaremos a disposição.</h3>
 <h3 class="text-center">
   O serviço foi agendado para dia <%= @schedule.date.strftime("%d/%m/%Y") %> as <%= @schedule.hour %> horas
 </h3>

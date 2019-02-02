@@ -2,7 +2,7 @@
   <td> <%= schedule.owner_name %> </td>
   <td> <%= schedule.owner_email %> </td>
   <td> <%= schedule.phone %> </td>
-  <td> <%= schedule.date %> </td>
+  <td> <%= schedule.date.strftime("%d/%m/%Y") %> </td>
   <td> <%= schedule.hour %> </td>
   <td> <%= schedule.service.name %> </td>
 </tr>
