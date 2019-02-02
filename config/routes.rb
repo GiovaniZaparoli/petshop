@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index, :new, :create, :destroy, :edit, :update]
 
-  resources :schedules, only: [:index, :new, :create]
+  resources :schedules, only: [:index, :create, :new]
 
   resources :backoffice, only: [:index]
 

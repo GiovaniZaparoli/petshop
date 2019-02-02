@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>O servico de <%= @schedule.service.description %> foi agendado com sucesso</h1>
+<p>
+  O serviço foi agendado para dia <%= @schedule.date.strftime("%d/%m/%Y") %> as <%= @schedule.hour %> horas
+</p>
+<p>
+  O valor cobrado pelo serviço será R$ <%= @schedule.service.price %>
+</p>
+<p>A Pet's Dreams agradeçe pela preferência!</p>
+</body>
+</html>

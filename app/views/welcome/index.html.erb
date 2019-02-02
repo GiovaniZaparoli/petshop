@@ -17,7 +17,7 @@
           <div class="card-body">
             <h2 class="card-title text-center"><%= service.description %></h2>
             <h5>Valor R$ <%= service.price %></h5>
-            <%= link_to 'Agendar Serviço', backoffice_index_path(service: service), class: 'btn btn-danger' %>
+            <%= link_to 'Agendar Serviço', new_schedule_path(service: service), class: 'btn btn-danger' %>
           </div>
         </div>
       </div>
