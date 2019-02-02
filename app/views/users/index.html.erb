@@ -1,11 +1,10 @@
-<%= render "backoffice/index" %>
+<%= render "backoffice/header" %>
 <div class="container mt-4">
   <% if flash[:notice] %>
     <div class="alert alert-success" role="alert">
       <%= flash[:notice] %>
     </div>
   <% end %>
-
   <table class="table table-bordered text-center">
     <thead>
     <tr>
@@ -15,7 +14,7 @@
     </tr>
     </thead>
     <tbody>
-    <%= render partial: 'users', collection: @user %>
+    <%= render partial: 'users', collection: @users %>
     </tbody>
   </table>
 
@@ -23,3 +22,5 @@
     <%= link_to 'Novo Usuário', new_user_path, class: 'btn btn-info' %>
   </div>
 </div>
+
+<%= render "backoffice/background" %>

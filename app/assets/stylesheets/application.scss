@@ -35,12 +35,43 @@
 
 .card-image {
   height: 30vh;
+  overflow: hidden;
 }
 
-.seal {
-  max-height: 50%;
-  max-width: 50%;
+.header-backoffice {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  background-image: url('https://www.portoseguro.com.br/NovoInstitucional/static_files/images/capas/Desktop/porto-seguro-pet-shop-clinicas-veterinarias-bg-header-1920x505.jpg')
 }
+
+.back-image-backoffice {
+  background-image: url('http://atacama.ind.br/wp-content/uploads/2016/03/como-montar-um-pet-shop-atacama2.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.btn-font {
+  color: #EFEFEF;
+}
+
+.btn-font:visited {
+  text-decoration: none;
+  decoration: none;
+  color: #EFEFEF;
+}
+
+
 
 
 

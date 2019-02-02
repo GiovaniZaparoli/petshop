@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+
   devise_for :users
 
   resources :users, only: [:index, :new, :create, :destroy, :edit, :update]
+
+  resources :schedules, only: [:index, :new, :create]
+
+  resources :backoffice, only: [:index]
 
   resources :welcome, only: [:index]
 

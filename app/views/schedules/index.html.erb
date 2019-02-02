@@ -1,0 +1,32 @@
+<%= render "backoffice/header" %>
+<div class="container mt-4">
+  <% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Área de agendamentos</h1>
+      <p class="text-center">Nessa área você pode verificar todos os serviços que estão agendados</p>
+    </div>
+  </div>
+
+  <table class="table table-bordered text-center">
+    <thead>
+    <tr>
+      <th class="text-center">Dono do Pet</th>
+      <th class="text-center">Email do Dono</th>
+      <th class="text-center">Telefone</th>
+      <th class="text-center">Dia</th>
+      <th class="text-center">Horario</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'schedule', collection: @schedules %>
+    </tbody>
+  </table>
+</div>
+
+<%= render "backoffice/background" %>

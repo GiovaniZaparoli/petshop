@@ -1,11 +1,5 @@
-<div class="header">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class="text-center">Bem Vindo ao Pet's Dreams</h1>
-      <p class="text-center">Pet's Dreams é o maior e melhor conceitudo petshop da américa latina, com os melhores produtos e técnicas, venha conhecer!</p>
-    </div>
-  </div>
-</div>
+<%= render partial: 'header' %>
+
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-12">
@@ -23,29 +17,16 @@
           <div class="card-body">
             <h2 class="card-title text-center"><%= service.description %></h2>
             <h5>Valor R$ <%= service.price %></h5>
-            <a href="#" class="btn btn-danger">Agendar Serviço</a>
+            <%= link_to 'Agendar Serviço', backoffice_index_path(service: service), class: 'btn btn-danger' %>
           </div>
         </div>
       </div>
     <% end %>
   </div>
 </div>
-<section class="back-image mt-5">
-
-</section>
-
-<section class="footer">
-
-  <div class="row">
-    <div class="offset-md-5 col-md-2 offset-md-5">
-      <button class="btn btn-dark">Área do Administrador</button>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 mt-1">
-      <p class="text-center">Desenvolvido por: Zaparoli Técnologias de E-commerce LTDA</p>
-    </div>
-  </div>
 
 
-</section>
+
+<%= render partial: 'background' %>
+
+<%= render partial: 'footer' %>

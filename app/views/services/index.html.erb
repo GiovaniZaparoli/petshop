@@ -1,10 +1,17 @@
-<%= render "backoffice/index" %>
+<%= render "backoffice/header" %>
 <div class="container mt-4">
   <% if flash[:notice] %>
     <div class="alert alert-success" role="alert">
       <%= flash[:notice] %>
     </div>
   <% end %>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Área de serviços</h1>
+      <p class="text-center">Nessa área você poder cadastrar, alterar ou excluir serviços</p>
+    </div>
+  </div>
 
   <table class="table table-bordered text-center">
     <thead>
@@ -25,3 +32,5 @@
     <%= link_to 'Novo Serviço', new_service_path, class: 'btn btn-info' %>
   </div>
  </div>
+
+<%= render "backoffice/background" %>
