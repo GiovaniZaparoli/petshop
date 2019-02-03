@@ -16,7 +16,7 @@ Este projeto utiliza `docker` para seu ambiente de desenvolvimento.
    `docker-compose up -d`    
    
 Após a execução do comando acima, seu ambiente estará pronto.
-* Lembrete: A execução do comando pode variar de acordo com a velocidade da sua conexão com a internet.
+* Lembrete: O tempo de  execução do comando pode variar de acordo com a velocidade da sua conexão com a internet.
 
 Os seguintes containers serão disponibilizados:
 
@@ -40,8 +40,8 @@ O envio de emails está sendo interceptado pelo mailtrap, para configurar o seu 
 development.rb e production.rb e substituir as configurações presentes do mailtrap pelas suas credências.
 
 # Acessando a área de administrador
-Para acessar a área do administrador basta ir até o rodapé da página incial e clicar no botão `área do administrador`
-você será redicionado para tela de login. utlize o seguinte usuário para logar:
+Para acessar a área do administrador basta ir até o rodapé da página inicial e clicar no botão `área do administrador`
+você será redirecionado para tela de login. utlize o seguinte usuário para logar:
 
 * email: admin@admin
 * senha: mudar123

@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0091e0c5-e9e3-43d5-abc4-89676fb4012d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/schedules_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/schedules_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/services_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/services_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/schedule.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/schedule.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/schedules/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/schedules/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/services/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/services/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/services/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/services/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/services/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/services/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/_users.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_users.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/er = User.new user_params" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="337">
-                <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+              <first_editor relative-caret-position="84">
+                <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
@@ -300,12 +282,12 @@
       <workItem from="1548790154066" duration="15000" />
       <workItem from="1548790697050" duration="24146000" />
       <workItem from="1549107973543" duration="23330000" />
-      <workItem from="1549195347139" duration="7511000" />
+      <workItem from="1549195347139" duration="7773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72029000" />
+    <option name="totallyTimeSpent" value="72291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -677,8 +659,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="337">
-            <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <first_editor relative-caret-position="84">
+            <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
