@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_02_01_193158) do
 
-  create_table "schedules", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
+  create_table "schedules", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "owner_name"
     t.string "owner_email"
     t.string "phone"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_02_01_193158) do
     t.index ["service_id"], name: "index_schedules_on_service_id"
   end
 
-  create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
+  create_table "services", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "name"
     t.text "description"
     t.float "price"
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2019_02_01_193158) do
     t.datetime "imagem_updated_at"
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

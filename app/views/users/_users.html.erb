@@ -1,7 +1,11 @@
  <tr>
     <td><%= users.email %></td>
    <td>
-     <%= button_to "Excluir Usuário", users, method: :delete, class: 'btn btn-danger'%>
+     <% if users.email == 'admin@admin' %>
+       <p>Não é possível excluir o administrador</p>
+     <% else %>
+       <%= button_to "Excluir Usuário", users, method: :delete, class: 'btn btn-danger'%>
+     <% end %>
    </td>
    <td>
     <%= link_to "Editar usuário", edit_user_path(users), class: 'btn btn-primary btn-font' %>

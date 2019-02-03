@@ -5,17 +5,21 @@
 
         <div class="field form-group">
           <label>Email</label>
-          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>
+          <% if @user.email == 'admin@admin' %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', disabled: true %>
+          <% else %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', required: true %>
+          <% end %>
         </div>
 
         <div class="field form-group">
           <label>Senha</label>
-          <%= f.password_field :password, autocomplete: "Senha", class: 'form-control' %>
+          <%= f.password_field :password, autocomplete: "Senha", class: 'form-control', required: true %>
         </div>
 
         <div class="field form-group">
           <label>Confirmar Senha</label>
-          <%= f.password_field :password_confirmation, autocomplete: "Senha", class: 'form-control' %>
+          <%= f.password_field :password_confirmation, autocomplete: "Senha", class: 'form-control', required: true %>
         </div>
 
         <div>

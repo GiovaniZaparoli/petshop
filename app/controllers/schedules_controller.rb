@@ -15,10 +15,11 @@ class SchedulesController < ApplicationController
   def create
     @schedule = Schedule.new schedule_params
     if @schedule.save
-      ScheduleMailer.with(schedule: @schedule).schedule_email.deliver_now!
+      ScheduleMailer.with(schedule: @schedule).schedule_email.deliver_now
       flash[:notice] = "Serviço agendado com sucesso"
       redirect_to root_path
     else
+      flash[:notice] = "Falha ao agendar serviço tente novamente"
       render :new
     end
   end

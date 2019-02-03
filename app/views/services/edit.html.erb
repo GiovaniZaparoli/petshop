@@ -1,6 +1,11 @@
 <%= render partial: 'backoffice/header' %>
 
 <div class="row mt-5">
+  <% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
   <div class="col-md-12 d-flex justify-content-center">
     <h1 class="display text-center">Edição de um serviço</h1>
   </div>

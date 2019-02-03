@@ -15,7 +15,7 @@ Service.create!(
 
 Service.create!(
     name: 'Tosa',
-    description: 'Seu pet irá receber uma tosa higienica com total cuidado para que não haja interferência na anotomia do animal',
+    description: 'Seu pet irá receber uma tosa higienica com total cuidado para que não haja interferência na anatomia do animal',
     price: 50.00,
     imagem: File.new(Rails.root.join('db/images/tosa.png'))
 )

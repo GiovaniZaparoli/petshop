@@ -1,12 +1,11 @@
 <%= render partial: 'backoffice/header' %>
 
-<% @service.errors.full_messages.each do |message| %>
-  <div class="alert alert-danger" role="alert">
-    <%= message %>
-  </div>
-<% end %>
-
 <div class="row mt-5">
+  <% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
   <div class="col-md-12">
     <h1 class="display text-center">Cadastrar novo Serviço</h1>
   </div>

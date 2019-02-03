@@ -14,6 +14,7 @@ class ServicesController < ApplicationController
       flash[:notice] = "Serviço salvo com sucesso"
       redirect_to services_path
     else
+      flash[:notice] = "Falha ao salvar serviço"
       render :new
     end
   end
@@ -27,6 +28,7 @@ class ServicesController < ApplicationController
       flash[:notice] = 'Serviço atualizado com sucesso'
       redirect_to services_path
     else
+      flash[:notice] = 'Falha ao atualizar serviço'
       render :edit
     end
   end

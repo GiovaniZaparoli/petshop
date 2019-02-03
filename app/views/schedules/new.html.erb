@@ -1,5 +1,10 @@
 <%= render 'welcome/header' %>
 <div class="row mt-5">
+  <% if flash[:notice] %>
+    <div class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
   <div class="col-md-12">
     <h1 class="display text-center">Agendar novo serviço</h1>
     <p class="text-center">Após o agendamento você irá receber um e-mail em até 24 horas com os dados de confirmação do agendamento</p>
